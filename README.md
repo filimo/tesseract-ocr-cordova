@@ -1,4 +1,4 @@
-# Cordova Tesseract-OCR - For Android
+# Simple Cordova Tesseract-OCR sample - For Android
 
 This is a Cordova app for OCR process using Tesseract library for both Android. [Tesseract](https://github.com/tesseract-ocr/tesseract) is an Open Source library for OCR (Optical Character Recognition) process.
 
