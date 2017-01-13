@@ -4,36 +4,22 @@ This is a Cordova app for OCR process using Tesseract library for both Android. 
 
 ## Installation
 
-### Before installing this plugin, make sure you have added the platform for your app:
-```bash
-$ ionic platform add android
-```
--> substitute android with ios to build for iOS.
+### 1. For Android platform:
 
-### 1. Download or clone this project, copy it to your app root folder and run ionic command to add the plugin:
-```bash
-$ git clone https://github.com/gustavomazzoni/cordova-plugin-tesseract
-$ cp -rf cordova-plugin-tesseract your-project/cordova-plugin-tesseract
-$ cd your-project/
-$ ionic plugin add cordova-plugin-tesseract
-```
-
-### 2. For Android platform:
-
-#### 2.1 Init
+#### 1.1 Init
 ```bash
 $ npm install -g npm-run
 $ npm install
 $ npm-run cordova prepare
 ```
 
-#### 2.2 Download or clone [tess-two project](https://github.com/rmtheis/tess-two) (it contains Tesseract library for Android) and copy the 'tess-two' folder inside of it to your android platform:
+#### 1.2 Download or clone [tess-two project](https://github.com/rmtheis/tess-two) (it contains Tesseract library for Android) and copy the 'tess-two' folder inside of it to your android platform:
 ```bash
 $ git clone https://github.com/rmtheis/tess-two
 $ cp -rf tess-two/tess-two/ your-project/platforms/android/tess-two
 ```
 
-#### 2.3 Edit `your-project/platforms/android/build.gradle` file and add 'tess-two' as a dependency to your project (after `// SUB-PROJECT DEPENDENCIES END` line):
+#### 1.3 Edit `your-project/platforms/android/build.gradle` file and add 'tess-two' as a dependency to your project (after `// SUB-PROJECT DEPENDENCIES END` line):
 ```
 dependencies {
      compile fileTree(dir: 'libs', include: '*.jar')
@@ -46,7 +32,7 @@ dependencies {
 }
 ```
 
-#### 2.4 Run
+#### 1.4 Run
 ```bash
 $ npm-run cordova run android
 ```
