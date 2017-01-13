@@ -37,4 +37,9 @@ dependencies {
 $ npm-run cordova run android
 ```
 
+### 1.5 Fix for Android 6.0
+Before you click "Scan a text" you should change store permission of the app.
+Go to setting/application/OCRTest and turn Storage toggle on(or make re-on).
+
+
 
